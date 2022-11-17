@@ -1,10 +1,3 @@
-
-# Rest Api Slim PHP
-
-[Example of REST API](https://github.com/maurobonfietti/rest-api-slim-php) with Slim PHP micro framework.
-
-This simple API allows you to manage resources such as: users, tasks and notes.
-
 ## Indices
 
 * [Info](#info)
@@ -16,21 +9,6 @@ This simple API allows you to manage resources such as: users, tasks and notes.
 
   * [Login](#1-login)
 
-* [Notes](#notes)
-
-  * [Get All Notes](#1-get-all-notes)
-  * [Get One Note](#2-get-one-note)
-  * [Create Note](#3-create-note)
-  * [Update Note](#4-update-note)
-  * [Delete Note](#5-delete-note)
-
-* [Tasks](#tasks)
-
-  * [Get All Tasks](#1-get-all-tasks)
-  * [Get One Task](#2-get-one-task)
-  * [Create Task](#3-create-task)
-  * [Update Task](#4-update-task)
-  * [Delete Task](#5-delete-task)
 
 * [Users](#users)
 
@@ -78,9 +56,7 @@ Status: Get Help | Code: 200
     "status": "success",
     "message": {
         "endpoints": {
-            "tasks": "http://localhost:8080/api/v1/tasks",
             "users": "http://localhost:8080/api/v1/users",
-            "notes": "http://localhost:8080/api/v1/notes",
             "docs": "http://localhost:8080/docs/index.html",
             "status": "http://localhost:8080/status",
             "this help": "http://localhost:8080"
@@ -122,9 +98,7 @@ Status: Get Status | Code: 200
     "status": "success",
     "message": {
         "stats": {
-            "tasks": 8,
             "users": 42,
-            "notes": 63
         },
         "MySQL": "OK",
         "Redis": "Disabled",
